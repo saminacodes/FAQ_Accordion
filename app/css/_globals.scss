@@ -1,16 +1,30 @@
-html {
-    font-size: 100%;
-    box-sizing: border-box;
-}
+// html {
+//     font-size: 100%;
+//     box-sizing: border-box;
+// }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
+// *, *::before, *::after {
+//     box-sizing: inherit;
+// }
 
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.3rem;
+    // line-height: 1.3;
     background: linear-gradient($softViolet, $softBlue);
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+.faq-card {
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+h4 {
+
+}
+
+p {
+    font-size: 12px;
 }
