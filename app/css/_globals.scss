@@ -1,74 +1,92 @@
-// html {
-//     font-size: 100%;
-//     box-sizing: border-box;
-// }
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
 
-// *, *::before, *::after {
-//     box-sizing: inherit;
-// }
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    // margin: 0;
-    // padding: 20;
-    // line-height: 1.3;
+    line-height: 1.3;
     background: linear-gradient($softViolet, $softBlue);
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: white;
+}
 
-.faq-card {
-    padding: 20px;
-    background: white;
+.container {
+    // width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background-color: white;
     border-radius: 20px;
-    width: 85%;
-    margin: auto;
-    box-shadow: 5px 5px 20px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.question {
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
-.img_bg {
-    position: absolute;
+.accordion-link {
+    font-size: 0.75rem;
+    color: $darkGrayishBlue;
+    font-weight: 300;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
 }
-
-.img_fg {
-    display: inline;
-    float: left;
-}
-
 
 h1 {
     color: $veryDarkGrayishBlue;
+    margin: 1rem;
 }
 
-h4 {
-    font-size: 0.75rem;
-    color: $veryDarkGrayishBlue;
-    font-weight: 300;
-    vertical-align: middle;
-    display: inline-block;
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 500ms;
 }
 
-.icon_arrow {
-    vertical-align: middle;
-    display: inline-block;
-    cursor: pointer;
-}
-
-// h4:after {
-//     content: url(/images/icon-arrow-down.svg);
-//     padding-left: 5px;
-// }
-
-p {
+.answer p {
     font-size: 0.75rem;
     color: $darkGrayishBlue;
-    display: none;
+    font-weight: 300;
+}
+
+// .icon_arrow {
+//     vertical-align: middle;
+//     display: inline-block;
+//     cursor: pointer;
+// }
+
+.question:target .answer {
+    max-height: 20rem;
+}
+
+.question:target .accordion-link {
+    font-weight: 700;
+}
+
+.question:target .icon_arrow {
+    transform: rotate(180deg);
 }
 
 hr {
     color: $lightGrayishBlue;
+    margin: 0 1rem;
 }

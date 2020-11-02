@@ -13,55 +13,90 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {font-size: 11px; text-align: center;}
+    .attribution a {color: hsl(228, 45%, 44%);}
   </style>
 </head>
 <body>
 
-  <div class = "faq-card">
-      <div class = "grid-container">
-        <div>
-          <img id = "img_fg" src="images/illustration-woman-online-desktop.svg">
-        </div>
-
-        <div>
+    <section>
+      <div class = "container">
+        <div class = "accordion">
           <h1>FAQ</h1>
-
-          <h4 class = "question" id = "q1">How many team members can I invite?</h4>
-          <a><img class = "icon_arrow" src= "images/icon-arrow-down.svg" onclick = "toggleAnswer()"></a>
-          <p class = "answer" id = "a1">You can invite up to 2 additional users on the Free plan. There is no limit on 
-            team members for the Premium plan.</p>
-          <hr>
-
-          <h4 class = "question" id = "q2">What is the maximum file upload size?</h4>
-          <a><img class = "icon_arrow" src= "images/icon-arrow-down.svg"></a>
-          <p class = "answer" id = "a2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-
-          <hr>
-
-          <h4 class = "question" id = "q3">How do I reset my password?</h4>
-          <a><img class = "icon_arrow" src= "images/icon-arrow-down.svg"></a>
-          <p class = "answer" id = "a3">Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </p>
+          <div class = "question" id = "question1">
+            <a class = "accordion-link" href = "#question1">
+              How many team members can I invite?
+              <img class = "icon_arrow" src= "images/icon-arrow-down.svg">
+            </a>
+            <div class = "answer">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There is no limit on 
+                team members for the Premium plan.
+              </p>
+            </div>
+          </div>
 
           <hr>
 
-          <h4 class = "question" id = "q4">Can I cancel my subscription?</h4>
-          <a><img class = "icon_arrow" src= "images/icon-arrow-down.svg"></a>
-          <p class = "answer" id = "a4">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          <div class = "question" id = "question2">
+            <a class = "accordion-link" href = "#question2">
+              What is the maximum file upload size?
+              <img class = "icon_arrow" src= "images/icon-arrow-down.svg">
+            </a>
+            <div class = "answer">
+              <p>
+                No more than 2GB. All files in your account must fit your allotted storage space.
+              </p>
+            </div>
+          </div>
 
           <hr>
 
-          <h4 class = "question" id = "q5">Do you provide additional support?</h4>
-          <a><img class = "icon_arrow" src= "images/icon-arrow-down.svg"></a>
-          <p class = "answer" id = "a5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          <div class = "question" id = "question3">
+            <a class = "accordion-link" href = "#question3">
+              How do I reset my password?
+              <img class = "icon_arrow" src= "images/icon-arrow-down.svg">
+            </a>
+            <div class = "answer">
+              <p>
+                Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.
+              </p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class = "question" id = "question4">
+            <a class = "accordion-link" href = "#question4">
+              Can I cancel my subscription?
+              <img class = "icon_arrow" src= "images/icon-arrow-down.svg">
+            </a>
+            <div class = "answer">
+              <p>
+                Yes! Send us a message and we’ll process your request no questions asked.
+              </p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class = "question" id = "question5">
+            <a class = "accordion-link" href = "#question5">
+              Do you provide additional support?
+              <img class = "icon_arrow" src= "images/icon-arrow-down.svg">
+            </a>
+            <div class = "answer">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              </p>
+            </div>
+          </div>
 
           <hr>
         </div>
       </div>
-  </div>
+    </section>
 
   <!--
   How many team members can I invite?
